@@ -10,10 +10,9 @@ function HeaderBar(){
                 </header>
             </div>
             
-            <nav className="navbar navbar-light bg-light">
+            <nav className="navbar navbar-light bg-light shadow-sm">
                 <span className="navbar-brand mb-0 mt-2 h1">NameList</span>
             </nav>
-            <hr />
         </>
     )
 }

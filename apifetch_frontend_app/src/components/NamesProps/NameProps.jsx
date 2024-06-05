@@ -5,12 +5,12 @@ export default function NameProps(props){
     return (
         <>
             <li className="list-group-item">
-                <div className="row">
-                    <div className="col-sm">
-                        <img src={props.avatar} alt={props.name}></img>
+                <div className="row align-items-center">
+                    <div className="col-2">
+                        <img src={props.avatar} alt={props.name} className="border rounded-circle border-secondary shadow"></img>
                         
                     </div>
-                    <div className="col-sm">
+                    <div className="col-10">
                         {/* imported  CSS from external file */}
                         <h3 className="gray">{props.name}</h3>
                         {/* Inline styl */}
@@ -20,9 +20,6 @@ export default function NameProps(props){
                         <p>Birthday: {new Intl.DateTimeFormat('en-GB').format(new Date(props.birthday)) }</p>
                     </div>
                 </div>
-                
-                
-                
             </li>
         </>
     )
