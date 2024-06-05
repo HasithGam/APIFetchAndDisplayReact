@@ -1,5 +1,4 @@
 import React from "react";
-import logo from '../../logo.svg';
 import NameProps from "../NamesProps/NameProps";
 
 function NameList(){
@@ -72,14 +71,11 @@ function NameList(){
 
     return(
     <>
-      <div className="App">
-        <header className="App-header">
-          <h2>REACT API Fetch <img src={logo} className="App-logo" alt="logo" /></h2>
-        </header>
-      </div>
-      <ul>
-        {NameListComponent()}
-      </ul>
+        <div className="container mt-4">
+        <ul className="list-group">
+            {NameListComponent()}
+        </ul>
+        </div>
     </>
     )
 }
